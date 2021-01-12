@@ -38,7 +38,6 @@ Each frame in the video is blurred using Gaussian blur to get a smooth image. Th
 ```cmd
 pip install numpy
 pip install opencv
-pip install times
 
 ```
 
