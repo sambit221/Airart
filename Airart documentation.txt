@@ -1,0 +1,28 @@
+Motivation for this idea
+The initial motivation came when there was a need for a dustless class room for the students to study in. I know that there are many ways like touch screens and more but what about the schools which can’t afford it to buy such huge large screens and teach on them like a T.V. 
+So, I thought why not can a finger be tracked, but that too at a initial level without deep learning. Hence it was OpenCV which came to the rescue.
+
+Create Air Canvas using Python-OpenCV
+Ever wanted to draw your imagination by just waving your finger in the air?  In this project, we will build an Air Canvas which can draw anything on it by just capturing the motion of a colored marker with a camera. 
+Here a colored object at the tip of the finger is used as the marker. We will be using the computer vision techniques of OpenCV to build this project. 
+The preferred language is Python due to its exhaustive libraries and easy to use syntax but understanding the basics it can be implemented in any OpenCV supported language.
+Here Color Detection and tracking are used in order to achieve the objective. The color marker is detected and a mask is produced. It includes the further steps of morphological operations on the mask produced which are Erosion and Dilation. 
+Erosion reduces the impurities present in the mask and dilation further restores the eroded main mask.
+
+# Introduction-
+This is a simple computer vision based project which tracks a target and uses the said target to draw on air. The motion of the target is captured by a webcam. 
+The video from the webcam is processed by the computer to get an AR like image overlay on top of the live footage.
+This project make use of a web cam to track the motion of the target.
+Each frame in the video is blurred using Gaussian blur to get a smooth image. The blurred image is then analysed to get the location of the pointing target. 
+The image is then masked and centroid of target is found. Then a line is drawn from current frame to the previous frame.
+
+
+Algorithm:
+* Start reading the frames and convert the captured frames to HSV color space (Easy for color detection).
+* Prepare the canvas frame and put the respective ink buttons on it.
+* Adjust the track bar values for finding the mask of the colored marker.
+* Preprocess the mask with morphological operations (Eroding and dilation).
+* Detect the contours, find the center coordinates of largest contour and keep storing them in the array for successive frames (Arrays for drawing points on canvas).
+* Finally draw the points stored in an array on the frames and canvas.
+
+
