@@ -18,9 +18,6 @@ The video from the webcam is processed by the computer to get an AR like image o
 Each frame in the video is blurred using Gaussian blur to get a smooth image. The blurred image is then analysed to get the location of the pointing target. The image is then masked and centroid of target is found <br> Then a line is drawn from current frame to the previous frame.<br>
 
 
-## Algorithm:
-
-
 ## It looks like
 <img alt="output"  src="example.jpg" />
 
