@@ -28,10 +28,9 @@ while True:
     gray_inp_img = cv2.cvtColor(inp_img, cv2.COLOR_BGR2GRAY)
     
     cv2.imshow("enter_point", inp_img)
-    
-    if k == 1 or cv2.waitKey(30) == 27:
-        cv2.destroyAllWindows()
-        break
+
+    cv2.destroyAllWindows()
+    break
 
 ##############################################
 stp = 0
@@ -40,6 +39,7 @@ stp = 0
 
 old_pts = np.array([[x, y]], dtype=np.float32).reshape(-1, 1, 2)
 
+if k == 1 or cv2.waitKey(30) == 27:
 
 mask = np.zeros_like(inp_img)
 
