@@ -25,7 +25,7 @@ while True:
      
     _, inp_img = cap.read()
     inp_img = cv2.flip(inp_img, 1)
-    gray_inp_img = cv2.cvtColor(inp_img, cv2.COLOR_BGR2GRAY)
+    gray_inp_img = cv2.cvtColor(inp_img, cv2.COLOR_BGR2GRAY )
     
     cv2.imshow("enter_point", inp_img)
 
@@ -40,6 +40,7 @@ stp = 0
 old_pts = np.array([[x, y]], dtype=np.float32).reshape(-1, 1, 2)
 
 if k == 1 or cv2.waitKey(30) == 27:
+    pass
 
 mask = np.zeros_like(inp_img)
 
